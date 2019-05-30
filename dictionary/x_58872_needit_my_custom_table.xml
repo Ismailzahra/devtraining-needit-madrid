@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="NeedIts" max_length="40" name="x_58872_needit_my_custom_table" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Short Description" max_length="40" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="state" type="string">
+            <choice>
+                <element inactive_on_update="false" label="work in progress" sequence="0" value="work in progress"/>
+                <element inactive_on_update="false" label="open" sequence="1" value="open"/>
+                <element inactive_on_update="false" label="closes complete" sequence="2" value="closes complete"/>
+                <element inactive_on_update="false" label="close in progress" sequence="3" value="close in progress"/>
+                <element inactive_on_update="false" label="closed skipped" sequence="4" value="closed skipped"/>
+            </choice>
+        </element>
+    </element>
+</database>
